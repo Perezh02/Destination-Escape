@@ -1,13 +1,18 @@
 html {
     box-sizing: border-box;
+    
 }
 
 body {
     height: 100vh;
+        background-image: url(https://images.unsplash.com/photo-1483729558449-99ef09a8c325?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+        background-size: auto;
+        background-repeat: no-repeat;
 }
 
 header {
     height: 20%;
+    text-align: center;
 }
 
 main {
@@ -16,17 +21,34 @@ main {
     justify-content: space-evenly;
 }
 
-.with_border {
-    border: 1px solid;
-}
-
 article {
     width: 40%;
 }
 
+h3 {
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+}
+
+h1, p {
+    font-family:'Square Peg', cursive;
+}
+
+.with_border {
+    border: 1px solid;
+}
+
+
 #left_article {
     border-color: red;
     font-family: "Amatic SC", cursive;
+    display: flex;
+    justify-content: center;
+    height: 78%;
+    font-size: x-large;
+    font-weight: bold;
+    white-space: pre-wrap;
     
 }
 
