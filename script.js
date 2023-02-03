@@ -2,6 +2,7 @@
 // the function "handleFormSubmit" is triggered. 
 document.querySelector("#destination_details_form").addEventListener("submit", handleFormSubmit);
 
+
 function handleFormSubmit(event) {
   // prevent the default form submit behavior
   event.preventDefault();
@@ -99,7 +100,12 @@ function createDestinationCard(name, location, photoUrl, description) {
   const removeButton = document.createElement("button");
   removeButton.textContent = "Remove";
   removeButton.className = "btn btn-danger";
+  removeButton.addEventListener("click", function() {
+   
+    card.remove();
+  });
   cardBody.appendChild(removeButton);
+  
   
   card.appendChild(cardBody);
   return card;
@@ -107,23 +113,16 @@ function createDestinationCard(name, location, photoUrl, description) {
 }
 
 
-var Typed1 = new Typed(".typing-1",{
-  strings: [
-    "Travel", "To", "Your", "Dream", "Destination"
-  ],
-  typeSpeed: 100,
-  backSpeed: 60,
-  loop: true
-});
+// window.onload = function () {
+//  const typing1 = new Typed(".typing-1", {
+//    strings: ["Travel", "To", "Your", "Dream", "Destination"],
+//    typeSpeed: 100,
+//    backSpeed: 60,
+//    loop: true
+//  });
 
-var Typed2 = new Typed(".typing-2",{
-  strings: [
-    "Travel", "To","Your", "Dream", "Destination"
-  ],
-  typeSpeed: 100,
-  backSpeed: 60,
-  loop: true
-  });
+
+// };
   
   
   
